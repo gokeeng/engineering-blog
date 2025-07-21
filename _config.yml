@@ -28,9 +28,9 @@ header_pages:
 # Giscus Comments Configuration
 giscus:
   repo: "gokeeng/engineering-blog"
-  repo_id: "" # You'll need to get this from giscus.app
+  repo_id: "R_kgDOPQVI8g"
   category: "General"
-  category_id: "" # You'll need to get this from giscus.app
+  category_id: "DIC_kwDOPQVI8s4CtQPA" 
   mapping: "pathname"
   strict: "0"
   reactions_enabled: "1"
