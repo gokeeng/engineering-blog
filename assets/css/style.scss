@@ -119,115 +119,26 @@
   border: 2px solid #267CB9;
 }
 
-.post-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  margin: 1rem 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.post-content {
+  flex: 1;
 }
+
+/* Post Layout Styles - Minimal */
+/* Let the theme handle most styling, just add essential customizations */
 
 .post-content {
   flex: 1;
 }
 
-/* Post Layout Styles */
-.post {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.post-header {
-  text-align: center;
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 1.5rem;
-}
-
-.post-title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.post-meta {
-  color: #666;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.post-author {
-  margin-left: 0.5rem;
-  font-style: italic;
-}
-
-.post-content {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #444;
-}
-
-.post-content h1,
-.post-content h2,
-.post-content h3 {
-  color: #333;
+.post-content h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: #333;
 }
 
-.post-content h2 {
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 0.5rem;
-}
-
-.post-content ul,
-.post-content ol {
-  margin: 1rem 0;
-  padding-left: 2rem;
-}
-
-.post-content li {
-  margin: 0.5rem 0;
-}
-
-/* Comments Section */
+/* Comments Section - Minimal */
 .comments-section {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 2px solid #e0e0e0;
-}
-
-.comments-section h3 {
-  color: #267CB9;
-  margin-bottom: 0.5rem;
-}
-
-.comments-intro {
-  color: #666;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-/* Post Tags in Post Layout */
-.post-header .post-tags {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.post-header .tag {
-  display: inline-block;
-  background: #267CB9;
-  color: white;
-  padding: 0.3rem 0.7rem;
-  margin: 0;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: bold;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
 }

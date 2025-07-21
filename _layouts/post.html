@@ -2,30 +2,29 @@
 layout: default
 ---
 
-<article class="post">
-  <header class="post-header">
-    {% if page.image %}
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image">
-    {% endif %}
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      {% if page.author %}
-        <span class="post-author">by {{ page.author }}</span>
-      {% endif %}
-      {% if page.tags.size > 0 %}
-        <div class="post-tags">
-          {% for tag in page.tags %}
-            <span class="tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-  </header>
+<h1>{{ page.title }}</h1>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-</article>
+<p>
+  <small>{{ page.date | date: "%B %d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}</small>
+</p>
+
+{% if page.image %}
+<p>
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width: 300px; height: auto; border-radius: 8px;">
+</p>
+{% endif %}
+
+{% if page.tags.size > 0 %}
+<p>
+  <strong>Tags:</strong> 
+  {% for tag in page.tags %}
+    <span style="background: #267CB9; color: white; padding: 2px 6px; border-radius: 10px; font-size: 0.8em; margin-right: 5px;">{{ tag }}</span>
+  {% endfor %}
+</p>
+{% endif %}
+
+<hr>
+
+{{ content }}
 
 {% include giscus.html %}

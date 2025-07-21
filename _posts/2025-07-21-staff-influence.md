@@ -8,8 +8,6 @@ excerpt: "Having the ability to effectively influence as a staff-level engineer 
 image: /assets/images/superhero.svg
 ---
 
-# Building Staff-Level Influence in Engineering
-
 As engineers progress in their careers, the transition from senior to staff level represents more than just a title change—it's about developing **influence as your superpower**. At the staff level, your impact extends far beyond the code you write to include the systems you design, the people you mentor, and the technical vision you help shape.
 
 ## The Influence Imperative
