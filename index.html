@@ -3,24 +3,26 @@ layout: default
 title: Home
 ---
 
-<div class="welcome-section">
-  <h1>Welcome to {{ site.title }}</h1>
-  <p class="site-description">{{ site.description }}</p>
-</div>
-
 <div class="recent-posts-section">
   <h2>Recent Posts</h2>
   
   <div class="post-list">
   {% for post in site.posts limit:5 %}
     <article class="post-entry">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-      {% if post.excerpt %}
-        <div class="post-excerpt">
-          {{ post.excerpt | strip_html | truncatewords: 30 }}
+      {% if post.image %}
+        <div class="post-image-container">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-snippet-image">
         </div>
       {% endif %}
+      <div class="post-content">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        {% if post.excerpt %}
+          <div class="post-excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 30 }}
+          </div>
+        {% endif %}
+      </div>
     </article>
   {% endfor %}
   </div>
