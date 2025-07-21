@@ -1,6 +1,6 @@
 title: Gordon Keogh on Engineering
 author: Gordon Keogh
-description: A blog about software engineering topics.
+description: A blog about software engineering topics I find interesting or important
 baseurl: "/engineering-blog" # the subpath of your site, e.g. /blog
 url: "https://gokeeng.github.io" # the base hostname & protocol for your site
 
