@@ -1,4 +1,4 @@
-title: Gordon Keogh's Engineering Blog
+title: Gordon Keogh on Engineering
 author: Gordon Keogh
 description: A blog about software engineering topics.
 baseurl: "/engineering-blog" # the subpath of your site, e.g. /blog
@@ -24,6 +24,21 @@ plugins:
 header_pages:
   - about.md
   - posts.md
+
+# Giscus Comments Configuration
+giscus:
+  repo: "gokeeng/engineering-blog"
+  repo_id: "" # You'll need to get this from giscus.app
+  category: "General"
+  category_id: "" # You'll need to get this from giscus.app
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "light"
+  lang: "en"
+  loading: "lazy"
 
 # Exclude from processing
 exclude:
