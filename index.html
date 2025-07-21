@@ -3,66 +3,29 @@ layout: default
 title: Home
 ---
 
-# Welcome to {{ site.title }}
-
-{{ site.description }}
-
-## Recent Posts
-
-<div class="post-list">
-{% for post in site.posts limit:5 %}
-  <article class="post-entry">
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-    {% if post.excerpt %}
-      <div class="post-excerpt">
-        {{ post.excerpt | strip_html | truncatewords: 30 }}
-      </div>
-    {% endif %}
-  </article>
-{% endfor %}
+<div class="welcome-section">
+  <h1>Welcome to {{ site.title }}</h1>
+  <p class="site-description">{{ site.description }}</p>
 </div>
 
-<p><a href="{{ "/posts/" | relative_url }}">View all posts &rarr;</a></p>
-
-<style>
-.post-list {
-  margin-top: 2rem;
-}
-
-.post-entry {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
-}
-
-.post-entry:last-child {
-  border-bottom: none;
-}
-
-.post-entry h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1.25rem;
-}
-
-.post-entry h3 a {
-  text-decoration: none;
-  color: #333;
-}
-
-.post-entry h3 a:hover {
-  color: #0066cc;
-}
-
-.post-date {
-  color: #666;
-  font-size: 0.85rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.post-excerpt {
-  color: #555;
-  line-height: 1.4;
-}
-</style>
+<div class="recent-posts-section">
+  <h2>Recent Posts</h2>
+  
+  <div class="post-list">
+  {% for post in site.posts limit:5 %}
+    <article class="post-entry">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      {% if post.excerpt %}
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncatewords: 30 }}
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+  </div>
+  
+  <div class="view-all-posts">
+    <a href="{{ "/posts/" | relative_url }}" class="view-all-link">View all posts &rarr;</a>
+  </div>
+</div>
