@@ -1,3 +1,11 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+# About
+
 Hi everyone!
 
 I'm currently a Staff (Software) Engineer with [Trustpilot](https://www.trustpilot.com/ "Trustpilot's Homepage") and live just outside Edinburgh in Scotland. I've previously worked at a number of different organisations covering a variety of industries.

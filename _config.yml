@@ -2,5 +2,35 @@ theme: jekyll-theme-minimal
 title: My Software Engineering Blog
 author: Gordon Keogh
 description: A blog about software engineering topics.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social media
+github_username: your-github-username
+twitter_username: your-twitter-username
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
 header_pages:
   - about.md
+  - posts.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
